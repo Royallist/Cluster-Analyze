@@ -150,6 +150,22 @@ details {
 
 /* Hide Streamlit chrome */
 footer, #MainMenu, header { visibility: hidden; }
+
+/* Sidebar selalu terbuka — sembunyikan tombol collapse */
+button[data-testid="collapsedControl"],
+button[aria-label="Close sidebar"],
+button[aria-label="collapse sidebar"],
+section[data-testid="stSidebar"] button[kind="header"],
+div[data-testid="stSidebarCollapseButton"] { display: none !important; }
+
+/* Pastikan sidebar selalu tampil */
+section[data-testid="stSidebar"] {
+    display: flex !important;
+    visibility: visible !important;
+    min-width: 244px !important;
+    transform: none !important;
+    left: 0 !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
