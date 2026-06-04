@@ -2,7 +2,10 @@
 
 > **Hacktiv8 Data Science Fulltime Program | MSIB-06 (HCK-014)**  
 > **Desvin Sitohang**
-> **https://cluster-analyze-npwxjyapszmoq9elelrkr6.streamlit.app/**
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cluster-analyze-npwxjyapszmoq9elelrkr6.streamlit.app/)
+
+🚀 **Live Demo:** [https://cluster-analyze-npwxjyapszmoq9elelrkr6.streamlit.app/](https://cluster-analyze-npwxjyapszmoq9elelrkr6.streamlit.app/)
 
 ---
 
@@ -132,6 +135,8 @@ Memuat data dari CSV hasil ekspor BigQuery, lalu memeriksa struktur, tipe data, 
 
 ```
 📂 Project
+├── app.py                              # Streamlit deployment app
+├── requirements.txt                    # Dependencies
 ├── P1G6_Set_1_Desvin_Sitohang.ipynb   # Notebook utama
 ├── P1G6_Set_1_Desvin_Sitohang.csv     # Dataset hasil BigQuery
 ├── km.pkl                              # Model K-Means tersimpan
@@ -142,15 +147,18 @@ Memuat data dari CSV hasil ekspor BigQuery, lalu memeriksa struktur, tipe data, 
 
 ---
 
-## ▶️ Cara Menjalankan
+## ▶️ Cara Menjalankan Lokal
 
 1. Clone repository ini
-2. Pastikan semua library sudah terinstall:
+2. Install semua dependencies:
    ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn feature-engine squarify joblib
+   pip install -r requirements.txt
    ```
-3. Letakkan file `P1G6_Set_1_Desvin_Sitohang.csv` di direktori yang sama dengan notebook
-4. Jalankan notebook dari atas ke bawah secara berurutan
+3. Jalankan Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
+4. Atau jalankan notebook secara langsung — pastikan file CSV ada di direktori yang sama.
 
 ---
 
